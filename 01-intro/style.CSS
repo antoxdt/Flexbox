@@ -1,0 +1,24 @@
+body{
+  background-color: pink;
+}
+.container{
+  padding: 1rem;
+  background-color: blueviolet;
+
+  /* habilitamos Flexbox */
+  display: flex;
+}
+
+.item{
+  background-color: tomato;
+}
+.item-flex {
+  background-color: green;
+  /* habilitamos flexbox en un elemento hijo */
+  display: flex;
+}
+
+.item-flex > h2 {
+  color: burlywood;
+  background-color: blue;
+}
