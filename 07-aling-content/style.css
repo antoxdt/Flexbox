@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+}
+
+bosy{
+  font-family: sans-serif;
+}
+
+.container{
+
+  display: flex;
+  flex-wrap:wrap ;
+
+  align-content: normal;/* default */
+  align-content: start;/* LLEVA LAS LINEAS HASTA EL CROSS STAR  */
+  align-content: flex-end;/*  */
+  align-content: center;
+  align-content: space-around;
+  align-content: space-between;/* distribulle el espacio entre las lineas */
+  align-content: space-evenly;/*  */
+  align-content: stretch;/* estiran las lineas en el esdpacio dispoible  no deven de tener alto definido */
+
+
+  width: 500px;
+  height: 100vh;
+  background-color: darkslateblue;
+
+}
+
+.item{
+  width: 150px;
+  height: 100px;
+  background-color: lightcoral;
+  text-align: center;
+  border: 1px solid lightgreen;
+
+}

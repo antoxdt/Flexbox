@@ -1,0 +1,57 @@
+/* Flex Basis
+
+es una de las tres propiedades que reciben los elementos dentro de un contenedor con display: flex
+
+Flex Basis -> define el tamaño inicial del elemento, antes de aplicar grow o shrink.
+*puede recibir valores como auto, px, %, etc...
+es similar a width y height pero se usa en un entorno flex y elige comportamientos deacuerdo a la direccion del eje principla
+ */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: whitesmoke;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  background-color: darkslateblue;
+}
+
+.item-1{
+  flex-basis: 50px;
+}
+.item-2{
+  flex-basis: 40%;
+}
+.item-3{
+  flex-basis: 4rem;
+}
+.item-4{
+  flex-basis: 8em;
+}
+
+
+/* Existe un short hand para estas tres propiedades: 
+
+  Flex: Flex grow | flex shrink | Flex basis
+
+  item-1 {
+  flex: 0 1 200px
+  }
+
+  item-2 {
+  flex: 1 1 50%
+  }
+
+  item-3 {
+  flex: 1 0 24rem
+  }
+*/

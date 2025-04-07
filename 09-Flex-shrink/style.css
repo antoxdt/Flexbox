@@ -1,0 +1,48 @@
+
+/* flesx shrink
+
+  es una de las 3 propiedades que reciben los elmentos (itmen) dentre de un contenedor (container) con display; flex
+
+  Flex-shrink -> define cuanto puede encojerse un elemento si el contenedor mas pequeño que elñ total de los elementos
+
+  *Valor por defecto1: se encoe si es necesario.
+  *si se pone, no se encoje.
+  *funcion proporcionalmente con flex grow
+  
+  */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: whitesmoke;
+}
+.container{
+
+  background-color: darkslateblue;
+}
+
+.item{
+  width: 300px;
+  flex-shrink: 1;/* valor por defecto, se encoje como sea mnecesario */
+
+  border: 1px solid lightcoral ;
+  background-color: lightgreen;
+}
+
+.item{
+  flex-shrink: 0;/* no se encoja */
+}
+.item{
+  flex-shrink: 1;/* SE ENCOJE CON un factor de 1 */
+}
+.item{
+  flex-shrink: 2;/* se encoje con un factor de 2 */
+}
+.item{
+  flex-shrink: 3;/* se encoje con un factor de 3 */
+}
